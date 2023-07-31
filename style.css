@@ -1,0 +1,289 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    width: 100%;    
+}
+
+.figure{      
+    height: 80px;
+    width: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    height: 70px;    
+}
+
+.navbar{
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.418);
+    margin-bottom: 5px;
+    height: 100px; 
+    background-color: white;   
+}
+
+header .btn{
+    color: rgb(255, 255, 255);
+    border: 1px solid rgba(110, 110, 110, 0.315);
+    background-color: rgba(96, 95, 97, 0.699); 
+}
+
+.btn-outline-success:hover{
+    background-color: rgba(67, 66, 68, 0.801); 
+}
+
+header .container{
+    background-color: rgba(196, 193, 199, 0.315);       
+    height: 40px;
+    border-radius: 0px 0px 10px 10px;   
+}
+
+header .ancor{
+    color: black;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.ancor:hover{
+    cursor: pointer;
+    transform: scaleX(1.1);
+}
+
+header .row{  
+    padding-top: 8px;     
+}
+
+.main-container{
+    margin-top: 50px;  
+    width: 95%;     
+}
+
+.tittle{    
+    font-size: 28px;
+}
+
+main .bx{
+    margin-left: 4px; 
+}
+
+.section-table{
+    margin-top: 20px;
+    margin-left: 50px;    
+    margin-right: 50px;
+    margin-bottom: 50px;
+    padding: 20px;    
+    height: 400px;
+}
+
+.table{    
+    height: 200px;
+    text-align: center;   
+    box-shadow: 0px 0px 8px 3px rgba(0, 0, 0, 0.404);  
+}
+
+table td,th{
+    vertical-align: middle;
+    font-size: 18px;
+}
+
+td button{
+    border: none;
+    background: transparent;      
+    margin-left: 5px;
+    margin-right: 5px;      
+}  
+
+.td-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.td-btn span{
+    font-size: 14px;
+}
+
+.bxs-edit-alt{
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;     
+}
+
+.bxs-trash{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;   
+    font-size: 25px;   
+}
+
+footer ul .nav-item{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.paragraph{
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.hide{
+    display: none;
+}
+
+.modal-dialog-centered{
+    background-color: rgba(0, 0, 0, 0.603);
+}
+
+.btn-nao{
+    background-color: green;
+}
+
+.btn-sim{
+    background-color: rgb(199, 18, 18);
+}
+
+.btn-nao:hover{
+    background-color: rgb(37, 94, 37);
+}
+
+.btn-sim:hover{
+    background-color: rgb(145, 29, 29);
+}
+
+@media screen and (max-width: 1360px) {
+    main .adicionar{
+        font-size: 16px;
+        padding: 0;
+    }  
+}
+
+@media screen and (max-width: 600px) {
+    .emailCol{
+        display: none;
+    }   
+    
+    .span-adicionar{
+       display: none;
+    } 
+
+    .adicionar .bx-plus-circle{
+        font-size: 18px;        
+    }
+
+    .adicionar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .input-search{
+        width: 150px;
+    }
+}
+
+/* Ate aqui HOME */
+
+.ep-main-section{
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.item1 {grid-area: header;}
+.item2 {grid-area: main;}
+.item3 {grid-area: footer;}
+
+.grid-container{
+    display: grid;
+    grid-template-areas: 
+    'header header header header header'
+     'main   main   main   main   main'
+    'footer footer footer footer footer'
+    ;
+    gap: 25px;
+}
+
+#footer-home{
+    left: 0;
+    bottom: 0;    
+    width: 100%;
+}
+
+#footer-edit{
+    left: 0;
+    bottom: 0;    
+    width: 100%;
+}
+
+#form-section{    
+    height: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+#form{    
+    padding: 10px;    
+    width: 400px;
+    display: flex;
+    flex-direction: column; 
+    height: 460px;   
+    border: 1px solid rgba(0, 0, 0, 0.26);
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.404);
+}
+
+.form-btns{
+    display:flex;
+    justify-content:space-around;
+    align-items: center;    
+    height: 120px;
+}
+
+.btn-cancel{
+    background-color: rgb(199, 18, 18);
+    font-size: 17px;
+    width: 90px;
+}
+
+.btn-cancel:hover{
+    background-color: rgb(145, 29, 29);
+}
+
+.btn-save{
+    background-color: green;
+    font-size: 18px;
+    width: 90px;
+}
+
+.btn-save:hover{
+    background-color: rgb(37, 94, 37);
+}
+
+.modal-edit{
+    height: 200px;
+}
+
+.modal-edit-content{
+    height: 180px;    
+}
+
+.modal-edit-body{
+    padding-top: 40px;
+}
+
+.edit-p{
+    font-size: 18px;
+}
+
+.modal-edit-header{
+    background-color: rgba(94, 184, 94, 0.767)
+    ;
+}

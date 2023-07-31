@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header id="header-home">
+    <nav id="navbar" class="navbar">
+      <article class="container-fluid">
+        <figure class="figure"><img class="logo" src="logo.png" alt="logo"></figure>
+        <form class="d-flex" role="search">
+          <input class="form-control input-search" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit"><i class='bx bx-search-alt'></i></button>
+        </form>
+      </article>
+    </nav>
+
+    <section class="container text-center">
+      <nav class="row">
+        <a class="col ancor">
+          Menu 1
+        </a>
+        <a class="col ancor">
+          Menu 2
+        </a>
+        <a class="col ancor">
+          Menu 3
+        </a>
+        <a class="col ancor">
+          Menu 4
+        </a>
+      </nav>
+    </section>
+  </header>
+
+  <main id="main-home">
+    <section class="main-container container-fluid text-center">
+      <article class="row">
+        <div class="col-1"></div>
+        <h1 class="col tittle">Cadastro de Clientes</h1>
+
+        <button onclick="goEditPage()" type="button" class="btn btn-primary btn-lg col-1 adicionar"><span
+            class="span-adicionar">Adicionar</span><i class='bx bx-plus-circle'></i></button>
+      </article>
+    </section>
+
+    <section class="section-table">
+      <table class="table rounded-3">
+        <thead>
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Nome</th>
+            <th scope="col">Data de Nascimento</th>
+            <th class="emailCol" scope="col">Email</th>
+            <th scope="col">Ações</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Carlao</td>
+            <td>18/06/1984</td>
+            <td class="emailCol">carlao.dev@gmail.com</td>
+            <td class="td-btn"><button onclick="goEditPage()" class="btn-edit"><i class='bx bxs-edit-alt'></i><span>editar</span></button>
+              <button onclick="showModalDialog()" class="btn-delete"><i
+                  class='bx bxs-trash'></i><span>excluir</span></button></td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Elisabete</td>
+            <td>20/12/2000</td>
+            <td class="emailCol">bete.dev@gmail.com</td>
+            <td class="td-btn"><button onclick="goEditPage()" class="btn-edit"><i class='bx bxs-edit-alt'></i><span>editar</span></button>
+              <button onclick="showModalDialog()" class="btn-delete"><i
+                  class='bx bxs-trash'></i><span>excluir</span></button></td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Julia</td>
+            <td>13/12/2020</td>
+            <td class="emailCol">juju.dev@gmail.com</td>
+            <td class="td-btn"><button onclick="goEditPage()" class="btn-edit"><i class='bx bxs-edit-alt'></i><span>editar</span></button>
+              <button onclick="showModalDialog()" class="btn-delete"><i
+                  class='bx bxs-trash'></i><span>excluir</span></button></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+      <section class="modal modal-dialog-centered hide" tabindex="-1">
+        <article class="modal-dialog">
+          <article class="modal-content">
+            <article class="modal-header">
+              <h5 class="modal-title">Excluir Cliente</h5>
+              <button onclick="closeModalDialog()" type="button" class="btn-close" data-bs-dismiss="modal"
+                aria-label="Close"></button>
+            </article>
+            <div class="modal-body">
+              <p>Deseja realmente apagar o Cliente?</p>
+            </div>
+            <div class="modal-footer">
+              <button onclick="closeModalDialog()" type="button" class="btn btn-secondary btn-nao"
+                data-bs-dismiss="modal">Não</button>
+              <button onclick="closeModalDialog()" type="button" class="btn btn-primary btn-sim">Sim</button>
+            </div>
+          </article>
+        </article>
+      </section>    
+  </main>
+
+  <footer id="footer-home">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+    </ul>
+    <p class="text-center paragraph">&copy; Matheus Holanda 2023</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>       
+    <link rel="stylesheet" href="style.css">     
+</head>
+
+<body>
+    <section class="grid-container">
+        <header id="header-edit" class="item1">
+            <nav id="navbar" class="navbar">
+                <article class="container-fluid">
+                    <figure class="figure"><img class="logo" src="logo.png" alt="logo"></figure>
+                    <form class="d-flex" role="search">
+                        <input class="form-control input-search" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit"><i class='bx bx-search-alt'></i></button>
+                    </form>
+                </article>
+            </nav>
+
+            <section class="container text-center">
+                <nav class="row">
+                    <a class="col ancor">
+                        Menu 1
+                    </a>
+                    <a class="col ancor">
+                        Menu 2
+                    </a>
+                    <a class="col ancor">
+                        Menu 3
+                    </a>
+                    <a class="col ancor">
+                        Menu 4
+                    </a>
+                </nav>
+            </section>
+        </header>
+
+        <main id="main-edit" class="item2">
+            <section id="main-section-edit-page" class="ep-main-section">
+                <h1>Inserir / Alterar Cliente</h1>
+            </section>
+
+            <section id="form-section">
+                <form id="form" action="">
+                    <article class="mb-2">
+                        <label for="nameinput" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="nameinput">
+                    </article>     
+                    
+                    <article class="mb-2">
+                        <label class="form-label" for="date">Data de Nascimento</label>
+                        <input class="form-control" type="date">
+                    </article>
+
+                    <article class="mb-2">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </article>
+
+                    <article>
+                    <label for="genero" class="form-label">Gênero</label>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected></option>
+                        <option value="1">Masculino</option>
+                        <option value="2">Feminino</option>
+                        <option value="3">Outro</option>
+                      </select>
+                    </article>
+
+                    <article class="mt-2 form-btns">
+                        <button onclick="backHomePage()" type="button" class="btn btn-secondary btn-cancel"
+                        data-bs-dismiss="modal">Cancelar</button>
+                      <button onclick="saveClient()" type="button" class="btn btn-primary btn-save">Salvar</button>
+                    </article>
+                </form>
+            </section>
+
+            <section class="modal modal-dialog-centered modal-save-client hide" tabindex="-1">
+                <article class="modal-dialog modal-edit">
+                  <article class="modal-content modal-edit-content">
+                    <article class="modal-header modal-edit-header">
+                      <h5 class="modal-title success-modal">Sucesso</h5>
+                      <button onclick="closeSaveClient()" type="button" class="btn-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                    </article>
+                    <div class="modal-body modal-edit-body">
+                      <p class="edit-p">Cliente Salvo com sucesso!</p>
+                    </div>                   
+                  </article>
+                </article>
+              </section> 
+        </main>
+
+        <footer id="footer-edit" class="item3">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+            </ul>
+            <p class="text-center paragraph">&copy; Matheus Holanda 2023</p>
+        </footer>
+    </section>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script> 
+        <script src="script.js"></script>         
+</body>
+
+</html>
