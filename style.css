@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+body{
+    background-color: #8ecae6;
+}
+
 header{
     width: 100%;    
 }
@@ -12,18 +16,19 @@ header{
     width: 260px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center;    
 }
 
 .logo{
-    height: 70px;    
+    height: 70px; 
+    border-radius: 50px;    
 }
 
 .navbar{
     box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.418);
     margin-bottom: 5px;
     height: 100px; 
-    background-color: white;   
+    background-color: #ffb703;   
 }
 
 header .btn{
@@ -33,17 +38,17 @@ header .btn{
 }
 
 .btn-outline-success:hover{
-    background-color: rgba(67, 66, 68, 0.801); 
+    background-color: rgba(67, 66, 68, 0.938); 
 }
 
 header .container{
-    background-color: rgba(196, 193, 199, 0.315);       
+    background-color: #fb8500;       
     height: 40px;
     border-radius: 0px 0px 10px 10px;   
 }
 
 header .ancor{
-    color: black;
+    color: #023047;
     font-size: 17px;
     text-decoration: none;
 }
@@ -64,10 +69,17 @@ header .row{
 
 .tittle{    
     font-size: 28px;
+    color: #023047;
 }
 
 main .bx{
     margin-left: 4px; 
+}
+
+main .adicionar{
+    background-color: #219ebc;
+    border-color: #023047;
+    color: #023047;
 }
 
 .section-table{
@@ -76,18 +88,19 @@ main .bx{
     margin-right: 50px;
     margin-bottom: 50px;
     padding: 20px;    
-    height: 400px;
+    height: 478px;       
 }
 
 .table{    
     height: 200px;
-    text-align: center;   
+    text-align: center;    
     box-shadow: 0px 0px 8px 3px rgba(0, 0, 0, 0.404);  
 }
 
 table td,th{
     vertical-align: middle;
-    font-size: 18px;
+    font-size: 20px;
+    color: #023047 !important;    
 }
 
 td button{
@@ -103,27 +116,41 @@ td button{
     align-items: center;
 }
 
-.td-btn span{
+.edit-span{
     font-size: 14px;
+    color: #28b1f0
+}
+
+.delete-span{
+    font-size: 14px;
+    color: #ec0a0a;
 }
 
 .bxs-edit-alt{
     margin-right: 10px;
     display: flex;
     flex-direction: column;
-    font-size: 25px;     
+    font-size: 25px;  
+    color: #28b1f0;   
 }
 
 .bxs-trash{
     margin-left: 10px;
     display: flex;
     flex-direction: column;   
-    font-size: 25px;   
+    font-size: 25px;  
+    color: #ec0a0a; 
 }
 
 footer ul .nav-item{
     margin-left: 20px;
     margin-right: 20px;
+    font-size: 18px; 
+    font-weight: 400;   
+}
+
+.nav-link{
+    color: whitesmoke;
 }
 
 .paragraph{
@@ -160,6 +187,12 @@ footer ul .nav-item{
         font-size: 16px;
         padding: 0;
     }  
+}
+
+@media screen and (max-width: 890px) {
+    main .adicionar {
+        font-size: 13px;        
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -212,14 +245,14 @@ footer ul .nav-item{
 
 #footer-home{
     left: 0;
-    bottom: 0;    
-    width: 100%;
+    bottom: 0px;    
+    width: 100%;     
 }
 
 #footer-edit{
     left: 0;
     bottom: 0;    
-    width: 100%;
+    width: 100%;   
 }
 
 #form-section{    
@@ -238,6 +271,7 @@ footer ul .nav-item{
     border: 1px solid rgba(0, 0, 0, 0.26);
     border-radius: 10px;
     box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.404);
+    background-color: white;
 }
 
 .form-btns{
